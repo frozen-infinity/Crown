@@ -1,0 +1,85 @@
+{
+  "layer": "top",
+  "position": "top",
+  "reload_style_on_change": true,
+  "margin": "10px",
+  "modules-left": [
+    "custom/logo",
+    "battery",
+    "custom/vpn",
+    "niri/language"
+  ],
+  "modules-center": [
+    "mpris",
+    "clock"
+  ],
+  "modules-right": [
+    "wireplumber",
+    "custom/bluetooth",
+    "custom/wifi",
+    "custom/search",
+    "custom/date",
+    "custom/power"
+  ],
+  "niri/language": {
+    "format": "{}",
+    "format-en": " English ",
+    "format-ru": " Russian "
+  },
+  "mpris": {
+    "format": "{artist} — {title}",
+    "format-stopped": "OwO",
+    "interval": 1
+  },
+  "custom/vpn": {
+    "exec": "python ~/.config/normal-waybar/vpn.py",
+    "on-click": "~/.config/normal-waybar/vpn_connect.sh",
+    "interval": 1
+  },
+  "custom/logo": {
+    "format": "󰣇 ",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh"
+  },
+  "custom/wifi": {
+    "format": " ",
+    "on-click": "~/start_wifi.sh"
+  },
+  "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-muted": "  {volume}%",
+    "format-icons": [
+      " ",
+      " ",
+      "  "
+    ],
+    "tooltip": false,
+    "on-click": "~/start_vol.sh"
+  },
+  "battery": {
+    "bat": "BAT0",
+    "format": " {capacity}%",
+    "format-charging": " {capacity}% charging",
+    "interval": 1,
+    "class": "power"
+  },
+  "network": {
+    "format-wifi": " ",
+    "on-click": "kitty nmtui",
+    "tooltip": false
+  },
+  "custom/bluetooth": {
+    "format": "",
+    "on-click": "blueberry"
+  },
+  "custom/date": {
+    "format": " {}",
+    "tooltip": false,
+    "exec": "date '+%a %b %d'",
+    "interval": 60
+  },
+  "clock": {
+    "format": " {:%H:%M} ",
+    "interval": 1,
+    "tooltip": false
+  }
+}

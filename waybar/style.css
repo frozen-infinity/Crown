@@ -1,0 +1,64 @@
+@define-color background rgba(224, 224, 244, 0.05);
+@define-color foreground rgba(245, 245, 245, 0.4);
+@define-color font rgba(255,255,255,0.95);
+
+
+* {
+  font-size: 15px;
+  font-family:JetBrains Mono;
+  margin-bottom: 0px;
+}
+window#waybar{
+  all:unset;
+  border-radius: 10px;
+  margin-bottom: -10px;
+}
+
+.modules-left, .modules-center, .modules-right {
+    margin-top: 0px;
+    margin-bottom: -10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: none; 
+}
+
+.modules-left {
+    padding:10px;
+}
+.modules-center {
+    padding:10px;
+    min-width: 150.5px;
+}
+.modules-right {
+    padding:10px;
+}
+
+
+
+#custom-vpn,#mpris, #language, #cusotm-mygif, #tray, #custom-bluetooth, #custom-logo, #custom-files, #custom-apps, #custom-view, #custom-edit, #custom-window, #wireplumber, #battery, #network, #custom-search, #custom-bluetooth, #custom-tweaks, #custom-date, #clock, #custom-power, #network, #custom-wifi{
+  color: rgba(255,255,255,1);
+  background: #1B1212;
+  padding: 10px;
+  margin-top: -10px;
+  border-radius: 20px;
+}
+#custom-logo {
+  margin-right: 20px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+#custom-vpn {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#custom-wifi {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#custom-bluetooth{
+  margin-left: 20px;
+}
+
+#mpris {
+  margin-right: 20px;
+}
