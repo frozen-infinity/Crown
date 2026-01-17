@@ -1,0 +1,9 @@
+background-color=#1D1D2A
+border-radius=6
+icons=1
+border-color=#ffffff
+margin=20
+default-timeout=20000
+
+[app-name=iwgtk]
+invisible=1
