@@ -1,0 +1,54 @@
+(
+    defwindow audio_menu
+    :monitor "0"
+    :exclusive "false"
+    :stacking "overlay"
+    :geometry
+    (geometry :y "60px"
+              :width "300px"
+              :x "1500px")
+    (audio_menu)
+)
+
+(
+    defwidget audio_menu []
+    (
+        box :class "parent" :space-evenly "false" :orientation "v"
+        (
+            box :class "body" :space-evenly "false" :orientation "v"
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__HDMI3__sink ; eww open audio_menu --toggle ; eww open slider --toggle --config ~/.config/eww/test/
+"
+                (label :text "  Comet Lake PCH cAVS HDMI / DisplayPort 3 Output")
+            )
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__HDMI2__sink ; eww open audio_menu --toggle ; eww open slider --toggle --config ~/.config/eww/test/
+"
+                (label :text "  Comet Lake PCH cAVS HDMI / DisplayPort 2 Output")
+            )
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__HDMI1__sink ; eww open audio_menu --toggle ; eww open slider --toggle --config ~/.config/eww/test/
+"
+                (label :text "  Comet Lake PCH cAVS HDMI / DisplayPort 1 Output")
+            )
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "pactl set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__Headphones__sink ; eww open audio_menu --toggle ; eww open slider --toggle --config ~/.config/eww/test/
+"
+                (label :text "  Comet Lake PCH cAVS Headphones")
+            )
+        )
+    )
+)
+

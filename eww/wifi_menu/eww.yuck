@@ -1,0 +1,75 @@
+(
+    defwindow wifi_menu
+    :monitor 0
+    :exclusive "false"
+    :stacking "overlay"
+    :geometry
+    (geometry :y "10px"
+              :width "300px"
+              :x "1520px")
+    (wifi_menu)
+)
+
+(
+    defwidget wifi_menu []
+    (
+        box :class "parent" :space-evenly "false" :orientation "v"
+        (
+            box :class "header" :space-evenly "false"
+            (label :text "     Select WiFi network" :class "title")
+            (
+                button 
+                :class "exit" 
+                :onclick "eww open wifi_menu --toggle --config ~/.config/eww/wifi_menu/"
+                (label :text "
+                 ")
+            )
+        )
+        (
+            box :class "body" :space-evenly "false" :orientation "v"
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "scripts/ignite.sh Beeline_2G_F14724"
+                (label :text "  Beeline_2G_F14724")
+            )
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "scripts/ignite.sh MTS_GPON5_ffc560"
+                (label :text "  MTS_GPON5_ffc560")
+            )
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "scripts/ignite.sh MTS_GPON_ffc560"
+                (label :text "  MTS_GPON_ffc560")
+            )
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "scripts/ignite.sh MyWiFi"
+                (label :text "  MyWiFi")
+            )
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "scripts/ignite.sh TP-Link_357E"
+                (label :text "  TP-Link_357E")
+            )
+            (
+                button 
+                :class "button"
+                :vexpand "false"
+                :onclick "scripts/ignite.sh TP-Link_357E_5G"
+                (label :text "  TP-Link_357E_5G")
+            )
+        )
+    )
+)
+

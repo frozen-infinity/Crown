@@ -1,0 +1,60 @@
+
+
+* { all: unset; }
+
+.parent {
+    background-color: #1F2020;
+    border-radius: 8px;
+    border: 2px solid white;
+    padding: 8px;
+}
+
+.header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.title {
+    margin-right: 50px;
+    margin-left: 1px;
+}
+
+.button {
+    margin-top: 8px;
+    background-color: #4A4B4C;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.button:hover {
+    background-color: #222;
+}
+
+.button:active {
+    background-color: #111;
+}
+
+.exit:hover {
+    color: #f66;
+}
+
+.exit, .button {
+    transition: all 0.2s ease;
+}
+
+.metric scale trough highlight {
+  all: unset;
+  background-color: #4A4B4C;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.metric scale trough {
+  all: unset;
+  background-color: #4A4B4C;
+  border-radius: 50px;
+  min-height: 3px;
+  min-width: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
+}

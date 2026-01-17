@@ -1,0 +1,22 @@
+(
+  defwindow password_field
+    :monitor 0
+    :exclusive "false"
+    :stacking "overlay"
+    :wm-ignore false
+    :focusable true
+    :geometry
+    (geometry :y "10px"
+              :width "200px"
+              :x "1520px")
+    (password_field)
+)
+(defwidget password_field []
+  (box :class "field"
+    :orientation "vertical"
+    :spacing 5
+    (input
+      :single-line true
+      :onaccept "./redirect.sh {} ; echo {} > password.txt ; pkill eww")
+  )
+)

@@ -1,0 +1,39 @@
+(
+  defwindow slider
+  :monitor 0
+  :exclusive "false"
+  :stacking "overlay"
+  :geometry
+  (geometry :y "5px"
+            :width "300px"
+            :x "1500px")
+  (slider)
+)
+
+(
+  defwidget slider []
+    (box :class "sl" :orientation "h" :space-evenly false :halign "end"
+          (metric :label " "
+            ;;:value volume
+            :onchange "amixer set Master {}%")
+            
+            (
+                button 
+                :class "exit" 
+                :onclick "eww open audio_menu --toggle ; eww open slider --toggle --config ~/.config/eww/test/"
+                (label :text " ")
+            )
+    )
+
+)
+
+(defwidget metric [label onchange]
+  (box :orientation "h"
+       :class "metric"
+       :space-evenly false
+    (box :class "label" label)
+    (scale :min 0
+           :max 101
+           :active {onchange != ""}
+           :value "value"
+           :onchange onchange)))
