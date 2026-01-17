@@ -1,4 +1,4 @@
 #!/bin/bash
 
-swaybg -i ~/hernya.jpg &
+swaybg -i ~/gb.jpg &
 hyprpaper
