@@ -13,7 +13,7 @@ Dotfiles for Arch Linux with an installation script!
 ![Middle preview](https://github.com/frozen-infinity/Crown/blob/main/preview-2.png)
 ![Last preview](https://github.com/frozen-infinity/Crown/blob/main/preview-3.png)
 
-Also I have made a video: 
+Also I have made a video:  https://drive.google.com/file/d/1Eo4CzfPqjBqylrT70mnQppjukMWJ5Arx/view?usp=sharing
 
 # Installation
 
