@@ -24,7 +24,6 @@
   "niri/language": {
     "format": "{}",
     "format-en": " English ",
-    "format-ru": " Russian "
   },
   "mpris": {
     "format": "{artist} — {title}",
