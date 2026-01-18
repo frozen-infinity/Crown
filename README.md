@@ -13,6 +13,8 @@ Dotfiles for Arch Linux with an installation script!
 ![Middle preview](https://github.com/frozen-infinity/Crown/blob/main/preview-2.png)
 ![Last preview](https://github.com/frozen-infinity/Crown/blob/main/preview-3.png)
 
+Also I have made a video: 
+
 # Installation
 
   There is a `cr0wn.sh` script in this repository. You can use it via executing the following:
@@ -28,7 +30,7 @@ In this setup there are the following shortcuts:
 | Action                          | Bind                     |
 | -------------                   | -------------            |
 | Open browser (Zen)              | Win + Z                  |
-| Open app launcher (wofi)        | Content Cell             |
+| Open app launcher (wofi)        | Win + A                  |
 | Open terminal (kitty)           | Win + T                  |
 | Open pretty widget              | Win + S                  |
 | Close window                    | Win + V                  |
