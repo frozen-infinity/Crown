@@ -32,7 +32,7 @@
     "interval": 1
   },
   "custom/vpn": {
-    "exec": "python ~/.config/waybar/vpn.py",
+    "exec": "kitty python ~/.config/waybar/vpn.py",
     "on-click": "~/.config/waybar/vpn_connect.sh",
     "interval": 1
   },
