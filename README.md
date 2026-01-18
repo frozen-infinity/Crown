@@ -6,3 +6,39 @@
 
 
 Dotfiles for Arch Linux with an installation script!
+
+# Previews
+
+![First preview](https://github.com/frozen-infinity/Crown/blob/main/preview-1.png)
+![Middle preview](https://github.com/frozen-infinity/Crown/blob/main/preview-2.png)
+![Last preview](https://github.com/frozen-infinity/Crown/blob/main/preview-3.png)
+
+# Installation
+
+  There is a `cr0wn.sh` script in this repository. You can use it via executing the following:
+  `curl -sS https://github.com/frozen-infinity/Crown/blob/main/cr0wn.sh | sh`
+
+  It will install required dependencies, configure NetworkManager to use iwd backend (required for the wifi widget tow work), and copy the configuration files to the `.config` directory.
+
+# Usage
+
+In this setup there are the following shortcuts:
+
+
+| Action                          | Bind                     |
+| -------------                   | -------------            |
+| Open browser (Zen)              | Win + Z                  |
+| Open app launcher (wofi)        | Content Cell             |
+| Open terminal (kitty)           | Win + T                  |
+| Open pretty widget              | Win + S                  |
+| Close window                    | Win + V                  |
+| Toggle overview                 | Win + O                  |
+| Resize window                   | Win + +/-                |
+| Resize window using proportions | Win + R                  |
+| Toggle floating                 | Win + V                  |
+| Switch focus between windows    | Win + Left/Right         |
+| Move focus between columns      | Win + Left/Right         |
+| Open file browser (nautilus)    | Win + F                  |
+| Move column                     | Win + Shift + Left/Right |
+| Expel window                    | Win + ]/[
+| Resize window height            | Win + Shift + +/-
