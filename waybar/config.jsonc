@@ -32,8 +32,8 @@
     "interval": 1
   },
   "custom/vpn": {
-    "exec": "python ~/.config/normal-waybar/vpn.py",
-    "on-click": "~/.config/normal-waybar/vpn_connect.sh",
+    "exec": "python ~/.config/waybar/vpn.py",
+    "on-click": "~/.config/waybar/vpn_connect.sh",
     "interval": 1
   },
   "custom/logo": {
