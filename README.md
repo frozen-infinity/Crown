@@ -7,13 +7,27 @@
 
 Dotfiles for Arch Linux with an installation script!
 
+# About
+
+💻 WM: Niri
+
+🐧 OS: Arch Linux
+
+🐈‍⬛ Terminal: Kitty
+
+😻 Shell prompt: Starship
+
+⬆️ Status bar: Waybar
+
+Also this setup uses EWW for it's widgets, and Neovim as a terminal text editor. 
+
 # Previews
 
 ![First preview](https://github.com/frozen-infinity/Crown/blob/main/preview-1.png)
 ![Middle preview](https://github.com/frozen-infinity/Crown/blob/main/preview-2.png)
 ![Last preview](https://github.com/frozen-infinity/Crown/blob/main/preview-3.png)
 
-Also I have made a video:  https://drive.google.com/file/d/1Eo4CzfPqjBqylrT70mnQppjukMWJ5Arx/view?usp=sharing
+Also I have made a video: 🔗  https://drive.google.com/file/d/1Eo4CzfPqjBqylrT70mnQppjukMWJ5Arx/view?usp=sharing
 
 # Installation
 
@@ -42,5 +56,8 @@ In this setup there are the following shortcuts:
 | Move focus between columns      | Win + Left/Right         |
 | Open file browser (nautilus)    | Win + F                  |
 | Move column                     | Win + Shift + Left/Right |
-| Expel window                    | Win + ]/[
-| Resize window height            | Win + Shift + +/-
+| Expel window                    | Win + ]/[                |
+| Resize window height            | Win + Shift + +/-        |
+
+> [!TIP]
+> Click on sound, wifi and power Waybar modules to get a nice EWW widget. Tap on the song name in Waybar whan audio is playing to pause it.
