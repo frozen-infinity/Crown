@@ -34,7 +34,7 @@ Also I have made a video: 🔗  https://drive.google.com/file/d/1Eo4CzfPqjBqylrT
   There is a `cr0wn.sh` script in this repository. You can use it via executing the following:
   `curl -sS https://github.com/frozen-infinity/Crown/blob/main/cr0wn.sh | sh`
 
-  It will install required dependencies, configure NetworkManager to use iwd backend (required for the wifi widget tow work), and copy the configuration files to the `.config` directory.
+  It will install required dependencies, configure NetworkManager to use iwd backend (required for the wifi widget to work), and copy the configuration files to the `.config` directory.
 
 # Usage
 
