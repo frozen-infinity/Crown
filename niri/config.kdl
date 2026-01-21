@@ -122,10 +122,10 @@ cursor {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     blur {
- 	 on
-         passes 4 // number of times to apply the blur effect
- 	 radius 1.0 // radius of the blur effect
-  	noise 0.4 //add grain to the blur
+ 	    on
+      passes 5 // number of times to apply the blur effect
+ 	    radius 0.5 // radius of the blur effect
+  	  noise 0.1 //add grain to the blur
     }
     // Set gaps around windows in logical pixels.
     gaps 16
@@ -180,8 +180,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-       active-color "#ffffff"
-
+       active-gradient from="#bb9af7" to="#7dcfff" angle=45 relative-to="workspace-view"
         // Color of the ring on inactive monitors.
         //
         // The focus ring only draws around the active window, so the only place
@@ -283,7 +282,9 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "WayVes"
-spawn-at-startup "~/.config/niri/scripts/s.sh"
+spawn-sh-at-startup "easyeffects -w"
+spawn-sh-at-startup "swww-daemon"
+spawn-sh-at-startup "~/.config/niri/scripts/s.sh"
 //spawn-at-startup "kitty" "--title" "candy" "peaclock"
 //spawn-at-startup "kitty" "--title" "candy" "cmatrix"
 //spawn-at-startup "~/movewindows.sh"
@@ -491,7 +492,15 @@ binds {
     Mod+Q { spawn "~/.config/niri/start_telegram.sh"; }
     Mod+I { spawn "sh ~/.config/niri/scripts/start_clion.sh"; }
     Mod+S { spawn "~/opendock.sh"; }
-
+    Mod+Ctrl+1 { spawn-sh "~/.config/niri/switch_bg.sh 1"; }
+    Mod+Ctrl+2 { spawn-sh "~/.config/niri/switch_bg.sh 2"; }
+    Mod+Ctrl+3 { spawn-sh "~/.config/niri/switch_bg.sh 3"; }
+    Mod+Ctrl+4 { spawn-sh "~/.config/niri/switch_bg.sh 4"; }
+    Mod+Ctrl+5 { spawn-sh "~/.config/niri/switch_bg.sh 5"; }
+    Mod+Ctrl+6 { spawn-sh "~/.config/niri/switch_bg.sh 6"; }
+    Mod+Ctrl+7 { spawn-sh "~/.config/niri/switch_bg.sh 7"; }
+    Mod+Ctrl+8 { spawn-sh "~/.config/niri/switch_bg.sh 8"; }
+    Mod+Ctrl+9 { spawn-sh "~/.config/niri/switch_bg.sh 9"; }
     // Suggespawn';klfghj sted binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
