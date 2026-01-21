@@ -67,10 +67,11 @@ cp start_vol.sh start_wifi.sh girl.png girly.png gb.jpg opendock.sh ~
 cd
 mv WayVes-config ~/.config/WayVes/
 mv ~/WayVes/shaders/utils/ ~/.config/WayVes/
-chmod +x start_vol.sh start_wifi.sh opendock.sh
+chmod +x start_vol.sh start_wifi.sh opendock.sh theme.sh 
 chmod +x ~/.config/eww/scripts/get_audio_devices.sh ~/.config/eww/scripts/set_audio_device.sh ~/.config/eww/wifi_menu/* ~/.config/eww/wifi_connection/*
 chmod +x ~/.config/waybar/scripts/*
 chmod +x ~/.config/waybar/*
+chmod +x ~/.config/niri/*
 chmod +x ~/.config/niri/scripts/*
 chmod +x ~/.config/eww/wifi_menu/scripts/*
 chmod +x ~/.config/eww/wifi_connection/*
