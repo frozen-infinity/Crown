@@ -14,7 +14,7 @@
 
 # Install dependencies
 echo "Installing dependencies"
-sudo pacman -Sy btop iwd python networkmanager bluez cmatrix swaybg hyprpaper kitty wofi lsd mako neovim waybar pamixer starship ttf-jetbrains-mono-nerd git
+sudo pacman -Sy btop swww iwd python networkmanager bluez cmatrix swaybg hyprpaper kitty wofi lsd mako neovim waybar pamixer starship ttf-jetbrains-mono-nerd git
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 echo "Switching to NetworkManager with iwd backend"
@@ -50,20 +50,12 @@ echo "Applying configurations"
 cd
 git clone https://github.com/frozen-infinity/Crown.git
 git clone https://github.com/frozen-infinity/WayVes-config.git
-mkdir ~/.config/ # If not already created
-#mkdir -p ~/.config/hypr
-#mkdir ~/.config/waybar/
-#mkdir ~/.config/eww/
-#mkdir ~/.config/kitty/
-#mkdir ~/.config/wofi/
-#mkdir ~/.config/mako/
-#mkdir ~/.config/nvim/
-#mkdir ~/.config/niri/
-#mkdir ~/.config/btop
+mkdir ~/.config/
 cd Crown
 cp -r btop eww hypr kitty lsd mako niri nvim waybar wofi ~/.config/
+cp Wallpapers ~/
 cp starship.toml ~/.config/
-cp start_vol.sh start_wifi.sh girl.png girly.png gb.jpg opendock.sh ~
+cp start_vol.sh theme.sh start_wifi.sh girl.png girly.png gb.jpg opendock.sh ~
 cd
 mv WayVes-config ~/.config/WayVes/
 mv ~/WayVes/shaders/utils/ ~/.config/WayVes/
