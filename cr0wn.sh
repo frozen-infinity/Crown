@@ -52,10 +52,12 @@ git clone https://github.com/frozen-infinity/Crown.git
 git clone https://github.com/frozen-infinity/WayVes-config.git
 mkdir ~/.config/
 cd Crown
+sudo cp arcade /bin
+sudo chmod +x /bin/arcade
 cp -r btop eww hypr kitty lsd mako niri nvim waybar wofi ~/.config/
 cp Wallpapers ~/
 cp starship.toml ~/.config/
-cp start_vol.sh theme.sh start_wifi.sh girl.png girly.png gb.jpg opendock.sh ~
+cp start_vol.sh .zshrc theme.sh start_wifi.sh girl.png girly.png gb.jpg opendock.sh ~
 cd
 mv WayVes-config ~/.config/WayVes/
 mv ~/WayVes/shaders/utils/ ~/.config/WayVes/
