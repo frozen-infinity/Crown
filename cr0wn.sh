@@ -14,7 +14,7 @@
 
 # Install dependencies
 echo "Installing dependencies"
-sudo pacman -Sy btop swww iwd zsh python networkmanager bluez cmatrix swaybg hyprpaper kitty wofi lsd mako neovim waybar pamixer starship ttf-jetbrains-mono-nerd git
+sudo pacman -Sy btop swww iwd zsh python networkmanager bluez cmatrix swaybg kitty wofi lsd mako neovim waybar pamixer starship ttf-jetbrains-mono-nerd git
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 echo "Switching to NetworkManager with iwd backend"
