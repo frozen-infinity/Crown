@@ -47,6 +47,8 @@ sudo make install
 
 # Download configuration files
 echo "Applying configurations"
+name=`whoami`
+sudo echo "$name ALL=(ALL) NOPASSWD: /usr/local/bin/adguardvpn-cli" >> etc/sudoers
 cd
 git clone https://github.com/frozen-infinity/Crown.git
 git clone https://github.com/frozen-infinity/WayVes-config.git
