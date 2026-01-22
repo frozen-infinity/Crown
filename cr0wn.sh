@@ -61,6 +61,7 @@ cp Wallpapers ~/
 cp starship.toml ~/.config/
 cp start_vol.sh theme.sh start_wifi.sh girl.png girly.png gb.jpg opendock.sh ~
 mv zshrc ~/.zshrc
+cp -r acsii ~
 cd
 mv WayVes-config ~/.config/WayVes/
 mv ~/WayVes/shaders/utils/ ~/.config/WayVes/
