@@ -22,12 +22,24 @@ Dotfiles for Arch Linux with an installation script!
 Also this setup uses EWW for it's widgets, and Neovim as a terminal text editor. 
 
 # Previews
+<details>
+<summary> Zeri Two thene </summary>
+  
+![First preview](https://github.com/frozen-infinity/Crown/blob/main/preview1.png)
+</details>
 
-![First preview](https://github.com/frozen-infinity/Crown/blob/main/preview-1.png)
-![Middle preview](https://github.com/frozen-infinity/Crown/blob/main/preview-2.png)
-![Last preview](https://github.com/frozen-infinity/Crown/blob/main/preview-3.png)
+<details>
+<summary> Colorful </summary>
+  
+![First preview](https://github.com/frozen-infinity/Crown/blob/main/preview2.png)
+</details>
+<details>
+<summary> KNY theme </summary>
+  
+![First preview](https://github.com/frozen-infinity/Crown/blob/main/preview3.png)
+</details>
 
-Also I have made a video: 🔗  https://drive.google.com/file/d/1Eo4CzfPqjBqylrT70mnQppjukMWJ5Arx/view?usp=sharing
+Also I have made a video: 🔗   https://github.com/frozen-infinity/Crown/blob/main/prev.mp4
 
 # Installation
 
@@ -58,6 +70,7 @@ In this setup there are the following shortcuts:
 | Move column                     | Win + Shift + Left/Right |
 | Expel window                    | Win + ]/[                |
 | Resize window height            | Win + Shift + +/-        |
+| Change theme                    | Win + Ctr + 1-9          |
 
 > [!TIP]
 > Click on sound, wifi and power Waybar modules to get a nice EWW widget. Tap on the song name in Waybar whan audio is playing to pause it.
