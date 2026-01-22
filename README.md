@@ -23,7 +23,7 @@ Also this setup uses EWW for it's widgets, and Neovim as a terminal text editor.
 
 # Previews
 <details>
-<summary> Zeri Two thene </summary>
+<summary> Zero Two thene </summary>
   
 ![First preview](https://github.com/frozen-infinity/Crown/blob/main/preview1.png)
 </details>
