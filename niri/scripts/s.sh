@@ -1,4 +1,4 @@
 #!/bin/bash
 
 swaybg -i ~/gb.jpg &
-hyprpaper
+swww img ~/Wallpapers/3.png
