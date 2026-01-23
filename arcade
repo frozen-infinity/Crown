@@ -2,4 +2,4 @@
 
 x=$(( RANDOM % 3 + 1 ))
 
-chafa ~/acsii/$x.png
+chafa ~/ascii/$x.png
