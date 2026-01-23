@@ -14,7 +14,7 @@
 
 # Install dependencies
 echo "Installing dependencies"
-sudo pacman -Sy btop swww iwd zsh python networkmanager bluez cmatrix swaybg kitty wofi lsd mako neovim waybar pamixer starship ttf-jetbrains-mono-nerd git
+sudo pacman -Sy btop cargo swww iwd zsh python networkmanager bluez cmatrix swaybg kitty wofi lsd mako neovim waybar pamixer starship ttf-jetbrains-mono-nerd git
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 echo "Switching to NetworkManager with iwd backend"
@@ -48,7 +48,7 @@ sudo make install
 # Download configuration files
 echo "Applying configurations"
 name=`whoami`
-sudo echo "$name ALL=(ALL) NOPASSWD: /usr/local/bin/adguardvpn-cli" >> etc/sudoers
+sudo echo "$name ALL=(ALL) NOPASSWD: /usr/local/bin/adguardvpn-cli" >> /etc/sudoers
 cd
 git clone https://github.com/frozen-infinity/Crown.git
 git clone https://github.com/frozen-infinity/WayVes-config.git
@@ -61,7 +61,7 @@ cp Wallpapers ~/
 cp starship.toml ~/.config/
 cp start_vol.sh theme.sh start_wifi.sh girl.png girly.png gb.jpg opendock.sh ~
 mv zshrc ~/.zshrc
-cp -r acsii ~
+cp -r ascii ~
 cd
 mv WayVes-config ~/.config/WayVes/
 mv ~/WayVes/shaders/utils/ ~/.config/WayVes/
